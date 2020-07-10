@@ -1,0 +1,23 @@
+{
+  "name": "Aarhus Kommune Unilogin Flow",
+  "version": "1.0",
+  "description": "Extension der optimerer Unilogin flow mod Aarhus Kommunes AD",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "broker.js"
+      ],
+      "matches": [
+        "https://broker.unilogin.dk/auth/realms/broker/*"
+      ],
+      "exclude_globs": [
+        "*post-broker-login*"
+      ]
+
+    }
+  ],
+  "manifest_version": 2
+}
