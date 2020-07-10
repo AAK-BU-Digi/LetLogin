@@ -19,10 +19,11 @@
       ]
 
     }
+    }
   ]
     "icons": {
     "16": "Icons/icon16.png",
     "48": "Icons/icon48.png",
     "128": "Icons/icon128.png"
-  }
+  
 }
