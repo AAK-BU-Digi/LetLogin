@@ -1,7 +1,7 @@
 {
-  "name": "Aarhus Kommune Unilogin Flow",
-  "version": "1.0",
-  "description": "Extension der optimerer Unilogin flow mod Aarhus Kommunes AD",
+  "name": "LetLogin",
+  "version": "1.2",
+  "description": "En extension der letter brugerens flow igennem STILs UNI-login broker",
   "permissions": [
     "storage"
   ],
