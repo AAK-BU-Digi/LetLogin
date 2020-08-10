@@ -1,6 +1,6 @@
 {
   "name": "LetLogin",
-  "version": "1.4",
+  "version": "1.5",
   "manifest_version": 2,
   "description": "En extension der letter brugerens flow igennem STILs UNI-login broker",
   "permissions": [
@@ -22,8 +22,8 @@
    
   ],
     "icons": {
-    "16": "Icons/icon-16.png",
-    "48": "Icons/icon-48.png",
-    "128": "Icons/icon-128.png"
+    "16": "Icons/LetLogin2-16.png",
+    "48": "Icons/LetLogin2-48.png",
+    "128": "Icons/LetLogin2-128.png"
    }
 }
