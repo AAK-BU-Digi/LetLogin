@@ -1,25 +1,45 @@
 {
   "name": "LetLogin",
-  "version": "1.6",
+  "version": "1.8",
   "manifest_version": 2,
-  "description": "En extension der letter brugerens flow igennem STILs UNI-login broker",
+  "description": "LetLogin",
+  
   "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "tabs",
+        "*://www.youtube.com/",
+        "https://www.youtube.com/",
+        "https://drive.google.com/*"
   ],
+  
   "content_scripts": [
     {
       "js": [
-        "broker.js"
+        "forward.js"
       ],
       "matches": [
-        "https://broker.unilogin.dk/auth/realms/broker/*"
+        "https://broker.unilogin.dk/auth/realms/broker/*",
+        "https://drive.google.com/*" 
+        
       ],
+     
       "exclude_globs": [
-        "*post-broker-login*"
+              "*post-broker-login*",
+              "*://youtube.com/",
+              "*consent.youtube.com*"
       ]
 
     }
    
   ],
+  
+    "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
     "icons": {
     "16": "Icons/LetLogin2-16.png",
     "48": "Icons/LetLogin2-48.png",
