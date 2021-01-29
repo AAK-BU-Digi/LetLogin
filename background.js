@@ -24,7 +24,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 // handle Youtube cookies. 
 // When using Youtube without permission to log in, playing videoes can sometimes cause problems.
 
-/*
 
 var requestMade = false;
 
@@ -57,7 +56,6 @@ chrome.webRequest.onBeforeRequest.addListener(
   { urls: ["*://youtube.com/*"] }
 );
 
-*/
 
 // note til manifest.json
 //              "*://youtube.com/",
