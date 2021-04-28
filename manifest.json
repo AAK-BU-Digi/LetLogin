@@ -6,9 +6,7 @@
   
   "permissions": [
         "webRequest",
-        "webRequestBlocking",
         "cookies",
-        "tabs",
         "*://www.youtube.com/",
         "https://www.youtube.com/",
         "https://drive.google.com/*"
