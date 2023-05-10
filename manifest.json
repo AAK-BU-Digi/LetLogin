@@ -1,17 +1,22 @@
 {
-  "name": "LetLogin",
-  "version": "1.9.3",
-  "manifest_version": 2,
-  "description": "LetLogin",
-  
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "LetLogin Medarbejder",
+  "version": "1.14",
+  "manifest_version": 3,
+  "description": "LetLogin for medarbejdere",
   "permissions": [
-        "webRequest",
-        "cookies",
-        "*://www.youtube.com/",
-        "https://www.youtube.com/",
-        "https://drive.google.com/*"
+    "webRequest",
+    "cookies",
+	 "clipboardRead",
+    "tabs"
   ],
-  
+  "host_permissions": [
+    "*://fravaer.tabulex.net/*",
+    "*://saml.personale.tabulex.dk/*",
+    "https://consent.youtube.com/*",
+    "*://drive.google.com/*",
+    "*://login.aula.dk/"
+  ],
   "content_scripts": [
     {
       "js": [
@@ -19,28 +24,21 @@
       ],
       "matches": [
         "https://broker.unilogin.dk/auth/realms/broker/*",
-        "https://drive.google.com/*" 
-        
+        "https://drive.google.com/*"
       ],
-     
       "exclude_globs": [
-              "*post-broker-login*",
-              "*://youtube.com/",
-              "*consent.youtube.com*"
+        "*post-broker-login*",
+        "*://youtube.com/",
+        "*consent.youtube.com*"
       ]
-
     }
-   
   ],
-  
-    "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+  "background": {
+    "service_worker": "background.js"
   },
-  
-    "icons": {
+  "icons": {
     "16": "Icons/LetLogin2-16.png",
     "48": "Icons/LetLogin2-48.png",
     "128": "Icons/LetLogin2-128.png"
-   }
+  }
 }
