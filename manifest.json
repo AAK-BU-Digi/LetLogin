@@ -31,6 +31,14 @@
         "*://youtube.com/",
         "*consent.youtube.com*"
       ]
+    },
+    {
+      "js": [
+        "medarbejder.js"
+      ],
+      "matches": [
+        "https://broker.unilogin.dk/auth/realms/broker/login-actions/post-broker-login*"
+      ]
     }
   ],
   "background": {
