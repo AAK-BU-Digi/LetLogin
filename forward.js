@@ -123,7 +123,7 @@ function handleUnilogin() {
         const selectedIdp = document.createElement('input');
         selectedIdp.setAttribute('type', 'hidden');
         selectedIdp.setAttribute('name', 'selectedIdp');
-        selectedIdp.setAttribute('value', 'aarhusmedarbejder');
+        selectedIdp.setAttribute('value', 'jammerbugt');
         form.appendChild(selectedIdp);
         form.submit();
     }
