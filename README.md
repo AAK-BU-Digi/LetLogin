@@ -9,7 +9,7 @@ Herefter kan du lave de fornødne rettelser, fx IdP.
 
 Herefter kan den installeres på egen chromebook via chrome://extensions/ -> "indlæs upakket". Vælg mappen hvor koden er placeret(gå ikke ind i mappen).
 
-Når alt er testet ok, skal den udgives på jeres GSfE domaine. Dette gøres på https://chrome.google.com/webstore/devconsole/ . Der skal betales 5$ i oprettelsesgebyr. Husk at udgive udvidelsen som "Private" og synlig for eget domaine.
+Når alt er testet ok, skal den udgives på jeres GWfE domaine. Dette gøres på https://chrome.google.com/webstore/devconsole/ . Der skal betales 5$ i oprettelsesgebyr. Husk at udgive udvidelsen som "Private" og synlig for eget domaine.
 
 Private tilføjelser skal ikke igennem sikkerhedstjek osv, så det er ikke vigtigt at få udfyldt alle felter.
 
@@ -23,6 +23,3 @@ Hvilke problemer kan LetLogin afhjælpe?
 * Log direkte ind i IST Tabulex med UNI-login broker
 * Log korrekt ud af IST Tablulex
 * Fix Youtube cookie problem. Hvis Youtube ikke er aktiveret som domaine-tjeneste, er det ikke muligt at logge ind. Dette kan give bøvl med Youtubes implementering af cookies.
-* Vis "Direkte download af billede i Google Drev" til brug i fx. læringsplatform. Se billede i mappen Dokumentation.
-
-
